@@ -15,9 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // Database Connection
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "mysql.railway.internal",
   user: "root",
-  password: "",
+  password: "ZYtaQvsiMowqIOGjchVzmBROPOOjJZSU",
   database: "art_gallery_db",
 });
 
