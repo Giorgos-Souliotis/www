@@ -8,7 +8,6 @@ const fs = require("fs");
 
 const app = express();
 const PORT = 3000;
-require('dotenv').config();
 
 app.use(cors());
 app.use(express.json());
