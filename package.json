@@ -1,9 +1,9 @@
 {
   "name": "art-gallery",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "public/index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server/app.js"
   },
   "keywords": [],
   "author": "",
