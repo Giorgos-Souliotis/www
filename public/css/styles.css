@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav aside"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 1fr 250px;
+  grid-template-rows: auto 50px 1fr auto;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background: #555;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+  grid-area: nav;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav ul li {
+  padding-top: 5px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.aside {
+  grid-area: aside;
+  background: #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aside li {
+  padding: 10px;
+  list-style: none;
+}
+
+.aside li a {
+  text-decoration: none;
+  color: black;
+}
+
+.submenu {
+  display: none;
+  background: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.main {
+  grid-area: main;
+  background: white;
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background: #555;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.paintings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.painting-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: calc(33.333% - 16px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.painting-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 4px #0056b3;
+}
+
+button[data-category] {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="url"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px #007bff;
+}
+
+form button {
+  background-color: #28a745;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+form button:focus {
+  box-shadow: 0 0 4px #218838;
+}
+
+#painting-filters {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+#painting-filters h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+#painting-filters button {
+  margin: 5px 0;
+}
+.aside {
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.submenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.submenu ul li {
+  margin-bottom: 10px;
+}
+
+.submenu ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.submenu ul li a:hover {
+  text-decoration: underline;
+}
+.content-section {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.content-section[style="display: none;"] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content-section[style="display: block;"] {
+  opacity: 1;
+  visibility: visible;
+}
+#biography-content img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+h2,
+h3 {
+  margin-bottom: 10px;
+}
+
+#biography-content h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#biography-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #555;
+}
+
+.link-category h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.link-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link-category ul li {
+  margin-bottom: 8px;
+}
+
+.link-category ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.link-category ul li a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.exhibition-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.exhibition-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.exhibition-card p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.edit-button {
+  background-color: #ffde22;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #ff0028;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#exhibitionForm,
+#linkForm {
+  margin-bottom: 10px;
+}
+
+#exhibitions-management li,
+#links-management li {
+  padding-bottom: 5px;
+}
+
+#exhibitionsList p {
+  padding: 5px 0;
+}
+
+@media (min-width: 768px) {
+  #exhibitionForm,
+  #linkForm {
+    max-width: 50%;
+  }
+
+  .painting-card {
+    width: calc(50% - 16px);
+  }
+}
+@media (min-width: 991px) {
+  #exhibitions-management,
+  #links-management,
+  #paintings-content,
+  #links-content,
+  #authForm {
+    padding-left: 100px;
+  }
+  #authForm {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .nav ul {
+    display: block;
+  }
+  .nav ul li {
+    padding-bottom: 8px;
+  }
+  .container {
+    grid-template-rows: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .painting-card {
+    width: 100%;
+  }
+}

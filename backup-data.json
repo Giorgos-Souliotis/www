@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "title": "The Genius of Leonardo",
+      "description": "A tribute to Leonardo da Vinci's timeless inventions and paintings.",
+      "date": "2025-04-10"
+    },
+    {
+      "id": 2,
+      "title": "Flight and Imagination",
+      "description": "Discover Leonardo's obsession with flight through his sketches and prototypes.",
+      "date": "2025-05-05"
+    },
+    {
+      "id": 3,
+      "title": "The Renaissance Polymath",
+      "description": "An exhibition celebrating Leonardo's contributions to art, science, and engineering.",
+      "date": "2025-06-15"
+    },
+    {
+      "id": 4,
+      "title": "The Secret Codes of da Vinci",
+      "description": "Explore the hidden symbols and mysteries in Leonardo's masterpieces.",
+      "date": "2025-07-20"
+    },
+    {
+      "id": 5,
+      "title": "The Vitruvian Man Revealed",
+      "description": "An in-depth look at the proportions of the human body through Leonardo's lens.",
+      "date": "2025-08-12"
+    }
+  ]
