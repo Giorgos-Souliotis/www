@@ -18,7 +18,7 @@ const db = mysql.createConnection({
   host: "mysql.railway.internal",
   user: "root",
   password: "ZYtaQvsiMowqIOGjchVzmBROPOOjJZSU",
-  database: "art_gallery_db",
+  database: "railway",
 });
 
 db.connect((err) => {
