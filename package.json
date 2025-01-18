@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bcryptjs": "^2.4.3", // choose either bcrypt or bcryptjs
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mysql2": "^3.12.0"
