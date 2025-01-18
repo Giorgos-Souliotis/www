@@ -1,7 +1,7 @@
 {
   "name": "art-gallery",
   "version": "1.0.0",
-  "main": "server/app.js",
+  "main": "js/app.js",
   "scripts": {
     "start": "node server/app.js"
   },
